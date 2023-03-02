@@ -16,7 +16,40 @@
     <div class="ms_wrapper">
 
         <!-- HEADER -->
-        <header class="ms_header">
+        <header class="ms_header d-flex align-items-center">
+            <div class="container-fluid">
+                <div class="row align-items-center ">
+                    <div class="col-auto">
+                        <a href="" class="d-lg-none">
+                            <img src="img/mobile-logo.png" alt=""  class="ms_logo-mobile">
+                        </a>
+                        <a href="" class="d-none d-lg-inline-block">
+                            <img src="img/logo.svg" alt="">
+                        </a>
+                        
+                    </div>
+                    <div class="col">
+                        <div class="input-group  ">
+                            <span class="input-group-text bg-body-secondary" id="basic-addon1"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <input type="text" class="form-control bg-body-secondary" placeholder="Prova a cercare lezioni Lavarel" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                    <div class="col-auto d-flex">
+                        <a href="">
+                            <i class="fa-solid fa-list text-secondary d-none d-lg-inline-block"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-circle-question text-secondary ms-2 d-none d-lg-inline-block"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-ellipsis-vertical text-secondary ms-2 d-none d-lg-inline-block"></i>
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-bell text-warning ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
 
 
         </header>
@@ -27,21 +60,21 @@
             <!-- SIDEBAR -->
             <div class="ms_sidebar py-2 text-white">
                 <ul class="ms_ul text-center">
-                    <li>
-                        <i class="fa-solid fa-house m-3"></i>
-                        <span class="d-none d-md-inline-block">Home</span>
+                    <li class="my-2">
+                        <i class="fa-solid fa-house pe-2"></i>
+                        <span class="d-none d-lg-inline-block">Home</span>
+                    </li>
+                    <li class="my-2">
+                        <i class="fa-solid fa-chart-simple pe-2"></i>
+                        <span class="d-none d-lg-inline-block">Stats</span>
+                    </li>
+                    <li class="my-2">
+                        <i class="fa-solid fa-signal pe-2"></i>
+                        <span class="d-none d-lg-inline-block">Signal</span>
                     </li>
                     <li>
-                        <i class="fa-solid fa-chart-simple m-3"></i>
-                        <span class="d-none d-md-inline-block">Stats</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-signal m-3"></i>
-                        <span class="d-none d-md-inline-block">Signal</span>
-                    </li>
-                    <li>
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="d-none d-md-inline-block">Admin</span>
+                        <i class="fa-solid fa-gear pe-2"></i>
+                        <span class="d-none d-lg-inline-block">Admin</span>
                     </li>
                 </ul>
 
@@ -56,7 +89,7 @@
                         <div class="row align-items-center py-3 d-flex">
                             <div class="col-12 col-md-4 order-md-3">
                                 <div class="d-flex align-items-center justify-content-md-end">
-                                    <h6 class="">nuovo studente</h6>
+                                    <h6 class="mb-0">nuovo studente</h6>
                                     <i class="fa-solid fa-plus ms_btn-plus ms-3"></i>
                                    
                                   
@@ -72,7 +105,7 @@
                                 <div>
                                     <a href=""><span class="badge rounded-pill ms_badge">3 app</span></a>
                                     <i class="fa-solid fa-angles-right"></i>
-                                    <a href=""><span class="badge rounded-pill ms_badge ms_circle"><i class="fa-solid fa-plus "></i></span></a>
+                                    <a href=""><span class="badge rounded-pill ms_badge ms_circle"><i class="fa-solid fa-plus ms_plus"></i></span></a>
                                     
                                     <a href=""><span class="badge rounded-pill ms_badge d-none d-md-inline-block">Boolean mobile app</span></a>
                                     <a href=""><span class="badge rounded-pill ms_badge d-none d-md-inline-block">Boolean web app</span></a>
@@ -99,34 +132,140 @@
                                           <h2>Prossime classi</h2>
                                         </div>
                                         <div class="card-body">
-                                            <table class="table">
+                                            <!-- table 1 -->
+                                            <table class="table d-md-none">
                                                 <thead>
                                                   <tr>
-                                                    <th scope="col" class=" " >Nome</th>
-                                                    <th scope="col" class="d-none d-md-inline-block" >Data inizio</th>
-                                                    <th scope="col" class="d-none d-md-inline-block">ROI</th>
+                                                    <th scope="col" class="ms_class">Nome</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
+                                                
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <th scope="row">Classe 75</th>
+                                                    <td>done</td>
+                                                    <td>done</td>
+                                                    <tr>
+                                                        <th scope="row">Classe 75</th>
+                                                        <td>done</td>
+                                                        <td>done</td>
+                                                
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">Classe 75</th>
+                                                        <td>done</td>
+                                                        <td>done</td>
+                                                
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">Classe 75</th>
+                                                        <td>done</td>
+                                                        <td>done</td>
+                                                
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">Classe 75</th>
+                                                        <td>done</td>
+                                                        <td>done</td>
+                                                
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">Classe 75</th>
+                                                        <td>done</td>
+                                                        <td>done</td>
+                                                
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">Classe 75</th>
+                                                        <td>done</td>
+                                                        <td>done</td>
+                                                
+                                                      </tr>
+                                                      <tr>
+                                                        <th scope="row">Classe 75</th>
+                                                        <td>done</td>
+                                                        <td>done</td>
+                                                
+                                                      </tr>
+                                            
+                                                  </tr>
+                                                  
+                                                </tbody>
+                                              </table>
+                                              <!-- table 2 -->
+                                              <table class="table d-none d-md-inline-block">
+                                                <thead>
+                                                  <tr>
+                                                    <th scope="col" class="ms_class">Nome</th>
+                                                    <th scope="col">Data inizio</th>
+                                                    <th scope="col">roi</th>
                                                     <th scope="col">stato</th>
                                                     <th scope="col">azioni</th>
                                                   </tr>
                                                 </thead>
                                                 <tbody>
                                                   <tr>
-                                                    <th scope="row">1</th>
-                                                    <td class="d-none d-md-inline-block">Mark</td>
-                                                    <td class="d-none d-md-inline-block">Otto</td>
-                                                    <td>@mdo</td>
-                                                    <td>@mdo</td>
+                                                    <th scope="row">classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>done</td>
+                                                    <td>done</td>
                                                   </tr>
+                                                  <tr>
+                                                    <th scope="row">classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>done</td>
+                                                    <td>done</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>done</td>
+                                                    <td>done</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>done</td>
+                                                    <td>done</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>done</td>
+                                                    <td>done</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>done</td>
+                                                    <td>done</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <th scope="row">classe 75</th>
+                                                    <td>15 febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>done</td>
+                                                    <td>done</td>
+                                                  </tr>
+
                                                   
                                                 </tbody>
-                                              </table> 
+                                              </table>
                                         </div>
                                       </div>
                                    
                                    
                                 </section>
 
-                                <section class="faq mt-2">
+                                <section class="faq my-2">
                                     <div class="card">
                                         <div class="card-header">
                                           <h2>FAQ</h2>
@@ -171,7 +310,7 @@
             
                                 </section>
                             </div>
-                            <div class="col-12 col-lg-4 mt-2">
+                            <div class="col-12 col-lg-4 mb-2">
                                 <div class="card">
                                     <div class="card-header">
                                       <h2>Todo</h2>
@@ -180,22 +319,25 @@
                                         <section class="section-todo">
                                             <div class="input-group mb-3">
                                              <div class="input-group-text">
-                                               <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                               <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="uno">
+                                               <label for="uno" class="ms-2">Kickoff nuove classi</label>
+                                             </div>
+                                             <input type="text" class="form-control" aria-label="Text input with checkbox" >
+                                           </div>
+                                           <div class="input-group mb-3">
+                                             <div class="input-group-text">
+                                               <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input " id="due">
+                                               <label for="due" class="ms-2">lezione su bootstrap 5</label>
                                              </div>
                                              <input type="text" class="form-control" aria-label="Text input with checkbox">
                                            </div>
                                            <div class="input-group mb-3">
                                              <div class="input-group-text">
-                                               <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                               <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input" id="tre">
+                                               <label for="tre" class="ms-2">Controllare username su github</label>
                                              </div>
                                              <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                           </div>
-                                           <div class="input-group mb-3">
-                                             <div class="input-group-text">
-                                               <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
-                                             </div>
-                                             <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                           </div>
+                                            </div>
                                          </section>
                                    
                                     </div>

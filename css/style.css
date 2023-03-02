@@ -5,13 +5,19 @@ img{
 .ms_wrapper{
     height: 100vh;
     width: 100%;
-    background-color: #051E34;
+   
 }
 /* HEADER */
 .ms_header{
     height: 70px;
-    /* debug */
-    background-color: rgb(121, 121, 35);
+  
+}
+.ms_logo-mobile{
+    width: 30px;
+}
+.form-control:focus {
+    box-shadow: none;
+    border-color:lightgray;
 }
 /* MAIN */
 
@@ -19,16 +25,20 @@ img{
 .ms_sidebar{
     height:calc(100vh - 70px);
     width: 70px;
-    position: relative;
-    /* debug */
    background-image: url(../img/sidebar-bg.png);
+   position: relative;
+   background-color: #051E34;
+
    
 
 }
 .ms_sidebar li:last-child{
-    background-color: red;
     position: absolute;
     bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%,0);
+    
+
 }
 .ms_ul{
     list-style-type:none;
@@ -55,23 +65,29 @@ img{
     border: 1px solid white;
     line-height: 30px;
     text-align: center;
+    padding: 0;
 }
 .ms_circle{
     display: inline-block;
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    position: relative;
     
 }
-@media screen and (min-width:768px){
+.ms_plus{
+    position: relative;
+    right: 3px;
+}
+@media screen and (min-width:992px){
     .ms_sidebar{
         width: 200px;
     }
   .ms_main-content{
     width: calc(100% - 200px);
   }
+
 }
+
 /* TABLE */
 
 .ms_classe::before{
@@ -87,6 +103,10 @@ img{
     filter: invert(1);
     
 }
+.ms_class{
+    width: 100%;
+}
+
 .table tr{
     border-bottom: 1px solid lightgrey;
 }
