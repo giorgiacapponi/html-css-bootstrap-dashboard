@@ -138,27 +138,20 @@ img{
 
 /* TABLE */
 
-.ms_classe::before{
-     
-    display: inline-block;
-    content: url(../img/class-avatar.jpg);
-    max-height: 30px;
-    max-width: 30px;
-    border-radius: 50%;
-  overflow: hidden;
-    margin-right: 1rem;
-    vertical-align: middle;
-    filter: invert(1);
-    
-}
-.ms_class{
-    width: 100%;
+tbody th{
+    font-weight: 400;
 }
 
-.table tr{
+.ms_img-table{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+/* .table tr{
     border-bottom: 1px solid lightgrey;
 }
-.table>:not(caption)>*>* {border-bottom-width: 0;}
+.table>:not(caption)>*>* {border-bottom-width: 0;} */
 
 /* TODO */
 .input-group-text {
