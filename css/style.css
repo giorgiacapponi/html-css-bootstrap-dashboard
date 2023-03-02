@@ -119,6 +119,9 @@ img{
 .ms_active-section:active .ms_form-active{
     display: inline-block;
 }
+.ms_form-active:hover{
+    display: inline-block;
+}
 
     
 
