@@ -1,0 +1,101 @@
+/* COMMON */
+img{
+    max-width: 100%;
+}
+.ms_wrapper{
+    height: 100vh;
+    width: 100%;
+    background-color: #051E34;
+}
+/* HEADER */
+.ms_header{
+    height: 70px;
+    /* debug */
+    background-color: rgb(121, 121, 35);
+}
+/* MAIN */
+
+/* SIDEBAR */
+.ms_sidebar{
+    height:calc(100vh - 70px);
+    width: 70px;
+    position: relative;
+    /* debug */
+   background-image: url(../img/sidebar-bg.png);
+   
+
+}
+.ms_sidebar li:last-child{
+    background-color: red;
+    position: absolute;
+    bottom: 2rem;
+}
+.ms_ul{
+    list-style-type:none;
+    padding-inline-start: 0;
+}
+/* MAIN_CONTENT */
+.ms_main-content{
+    height: calc(100vh - 70px);
+    width: calc(100% - 70px);
+    /* debug */
+    background-color: aqua;
+    overflow: auto;
+   
+}
+.badge.ms_badge{
+    background-color: rgba(0, 0, 0, 0.186);
+}
+.ms_btn-plus{
+    display: inline-block;
+    font-size: .8rem;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    line-height: 30px;
+    text-align: center;
+}
+.ms_circle{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: relative;
+    
+}
+@media screen and (min-width:768px){
+    .ms_sidebar{
+        width: 200px;
+    }
+  .ms_main-content{
+    width: calc(100% - 200px);
+  }
+}
+/* TABLE */
+
+.ms_classe::before{
+     
+    display: inline-block;
+    content: url(../img/class-avatar.jpg);
+    max-height: 30px;
+    max-width: 30px;
+    border-radius: 50%;
+  overflow: hidden;
+    margin-right: 1rem;
+    vertical-align: middle;
+    filter: invert(1);
+    
+}
+.table tr{
+    border-bottom: 1px solid lightgrey;
+}
+.table>:not(caption)>*>* {border-bottom-width: 0;}
+
+/* TODO */
+.input-group-text {
+    background-color: white;
+}
+.form-control{
+    border-left:0;
+}
