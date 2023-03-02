@@ -19,6 +19,22 @@ img{
     box-shadow: none;
     border-color:lightgray;
 }
+/* HEADER HOVER */
+.ms_bell{
+    position: relative;
+} 
+ .ms_bell-list{
+    position: absolute;
+    bottom: -120px;
+    left: -110px;
+    z-index: 1;
+    display: none;
+}
+
+.ms_bell:hover .ms_bell-list{
+    display: inline-block;
+}
+
 /* MAIN */
 
 /* SIDEBAR */
@@ -27,7 +43,7 @@ img{
     width: 70px;
    background-image: url(../img/sidebar-bg.png);
    position: relative;
-   background-color: #051E34;
+   background-color:black
 
    
 
@@ -43,6 +59,14 @@ img{
 .ms_ul{
     list-style-type:none;
     padding-inline-start: 0;
+}
+/* HOVER SIDEBAR */
+.ms_sidebar li{
+    width: 50%;
+    margin: 0 auto;
+}
+.ms_sidebar li:hover{
+    background-color: #f1f5f82d;
 }
 /* MAIN_CONTENT */
 .ms_main-content{
@@ -77,6 +101,21 @@ img{
 .ms_plus{
     position: relative;
     right: 3px;
+}
+/* ACTIVE *+*/
+
+
+.ms_form-active{
+    display: none;
+    height: 100vh;
+    background-color: rgb(255, 0, 30);
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+.ms_active-section:active{
+    display: inline-block;
 }
 @media screen and (min-width:992px){
     .ms_sidebar{

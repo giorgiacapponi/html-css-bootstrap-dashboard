@@ -44,8 +44,14 @@
                         <a href="">
                             <i class="fa-solid fa-ellipsis-vertical text-secondary ms-2 d-none d-lg-inline-block"></i>
                         </a>
-                        <a href="">
+                        <a href="" class="ms_bell">
                             <i class="fa-solid fa-bell text-warning ms-2"></i>
+                            <ul class="list-group ms_bell-list ">
+                                <li class="list-group-item">Profilo</li>
+                                <li class="list-group-item">Fatturazione</li>
+                                <li class="list-group-item">Log out</li>
+                               
+                            </ul>
                         </a>
                     </div>
                 </div>
@@ -60,7 +66,7 @@
             <!-- SIDEBAR -->
             <div class="ms_sidebar py-2 text-white">
                 <ul class="ms_ul text-center">
-                    <li class="my-2">
+                    <li class="my-2 primo">
                         <i class="fa-solid fa-house pe-2"></i>
                         <span class="d-none d-lg-inline-block">Home</span>
                     </li>
@@ -90,11 +96,70 @@
                             <div class="col-12 col-md-4 order-md-3">
                                 <div class="d-flex align-items-center justify-content-md-end">
                                     <h6 class="mb-0">nuovo studente</h6>
-                                    <i class="fa-solid fa-plus ms_btn-plus ms-3"></i>
-                                   
-                                  
+                                    <div class="ms_active-section" >
+                                        <i class="fa-solid fa-plus ms_btn-plus ms-3"></i>
+                                        <!-- section active -->
+                                        <div class=" ms_form-active col-5 p-3 ">
+                                            <h2>Inserisci nuovo studente</h2>
+                                            <form class="row g-3">
+                                                <div class="col-md-6">
+                                                    <label for="inputname" class="form-label">Name</label>
+                                                    <input type="name" class="form-control" id="inputname">
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                    <label for="inputsurname" class="form-label">surname</label>
+                                                    <input type="name" class="form-control" id="inputsurname">
+                                                  </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputEmail4" class="form-label">Email</label>
+                                                  <input type="email" class="form-control" id="inputEmail4">
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputPassword4" class="form-label">Password</label>
+                                                  <input type="password" class="form-control" id="inputPassword4">
+                                                </div>
+                                                <div class="col-12">
+                                                  <label for="inputAddress" class="form-label">Address</label>
+                                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                </div>
+                                                <div class="col-12">
+                                                  <label for="inputAddress2" class="form-label">Address 2</label>
+                                                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                </div>
+                                                <div class="col-md-6">
+                                                  <label for="inputCity" class="form-label">City</label>
+                                                  <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                  <label for="inputState" class="form-label">State</label>
+                                                  <select id="inputState" class="form-select">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                  </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                  <label for="inputZip" class="form-label">Zip</label>
+                                                  <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                                <div class="col-12">
+                                                  <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                    <label class="form-check-label" for="gridCheck">
+                                                      Check me out
+                                                    </label>
+                                                  </div>
+                                                </div>
+                                                <div class="col-12 d-flex">
+                                                  <button type="submit" class="btn btn-primary me-2">Sign in</button>
+                                                  <button type="submit" class="btn btn-warning">Delete</button>
+                                                </div>
+                                              </form>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
-                            </div>
                             <div class="col-12 col-md-4 mt-4">
                                 <div class="d-flex align-items-center">
                                     <h1>Boolean</h1>
@@ -122,6 +187,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- active section -->
+               
+                <!-- content bottom -->
                 <div class="ms_content-bottom py-3">
                     <div class="container-fluid">
                         <div class="row">
@@ -265,6 +333,7 @@
                                    
                                 </section>
 
+                                <!-- FAQ -->
                                 <section class="faq my-2">
                                     <div class="card">
                                         <div class="card-header">
@@ -279,7 +348,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                                    <div class="accordion-body">Clicca sul + in alto nella sezione blu.</div>
                                                 </div>
                                                 </div>
                                                 <div class="accordion-item">
@@ -289,7 +358,7 @@
                                                     </button>
                                                 </h2>
                                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                                    <div class="accordion-body">Clicca sullicona della campanella.</div>
                                                 </div>
                                                 </div>
                                                 <div class="accordion-item">
@@ -306,7 +375,7 @@
                                         </div>
                                     </div>
                                     
-                                   
+                                   <!-- TODO -->
             
                                 </section>
                             </div>
@@ -342,7 +411,7 @@
                                    
                                     </div>
                                   </div>
-                               
+                                  <!-- UTENTI -->
                                 <section class="utenti mt-2">
                                     <div class="card">
                                         <img src="img/stats.jpeg" class="card-img-top" alt="...">
@@ -372,6 +441,8 @@
         </main>
 
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
 </body>
 </html>
