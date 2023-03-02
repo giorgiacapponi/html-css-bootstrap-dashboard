@@ -108,15 +108,20 @@ img{
 .ms_form-active{
     display: none;
     height: 100vh;
-    background-color: rgb(255, 0, 30);
+    background-color: white;
+    color: black;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 3;
+   
 }
-.ms_active-section:active{
+.ms_active-section:active .ms_form-active{
     display: inline-block;
 }
+
+    
+
 @media screen and (min-width:992px){
     .ms_sidebar{
         width: 200px;
